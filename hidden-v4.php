@@ -12,7 +12,10 @@ class acf_field_hidden extends acf_field
         $this->name = 'hidden';
         $this->label = __('Hidden');
         $this->category = __("Basic",'acf'); // Basic, Content, Choice, etc
-        $this->defaults = array();
+        $this->defaults = array(
+            'prepend' => '',
+            'append'  => ''
+        );
 
         // do not delete!
         parent::__construct();
